@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 580252789}
   - component: {fileID: 580252788}
   - component: {fileID: 580252787}
+  - component: {fileID: 580252790}
   m_Layer: 0
   m_Name: SpaceShip
   m_TagString: Untagged
@@ -302,3 +303,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &580252790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580252786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 202252b30d843774ea9bf35af6357d4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7884087690273349820, guid: b466a2c11ac0f0c4abb826f3cd4c1248, type: 3}
+  offset: {x: 0.8, y: 0, z: 0}

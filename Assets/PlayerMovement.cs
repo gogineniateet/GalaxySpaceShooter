@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Update is called once per frame
      void Update()
-    {
+     {
 
         float inputX = Input.GetAxis("Horizontal");
         float inputY = Input.GetAxis("Vertical");
@@ -26,30 +26,22 @@ public class PlayerMovement : MonoBehaviour
 
         if (transform.position.y > 4.5f )
         {         
-
-            transform.position = new Vector3(transform.position.x,4.5f,0);
-
-            
+            transform.position = new Vector3(transform.position.x,4.5f,0);            
         }
 
         else if (transform.position.y < -4.5f)
-        {
-            
+        {            
             transform.position = new Vector3(transform.position.x, -4.5f,0);
-
-
         }
 
         if (transform.position.x > 7f ) 
         {
             transform.position = new Vector3(7f, transform.position.y,0);
-
         }
         else if(transform.position.x < -7f)
         {
             transform.position = new Vector3(-7f, transform.position.y, 0);
-
         }
 
-    }
+     }
 }
