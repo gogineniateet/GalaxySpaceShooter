@@ -7,6 +7,7 @@ public class LaunchBullet : MonoBehaviour
     public GameObject bulletPrefab;
     float time;
     public Vector3 offset;
+   
     
     // Update is called once per frame
     void Update()
@@ -17,5 +18,8 @@ public class LaunchBullet : MonoBehaviour
             Instantiate(bulletPrefab, transform.position + offset, Quaternion.identity);
             time = 0f;
         }
+
+       
+
     }
 }
