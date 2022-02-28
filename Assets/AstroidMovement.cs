@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletMovement : MonoBehaviour
+public class AstroidMovement : MonoBehaviour
 {
-    public float bulletSpeed;
 
+    public float astroidSpeed;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -16,11 +17,16 @@ public class BulletMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(bulletSpeed * Time.deltaTime, 0, 0);
-        if (transform.position.x > 8f)
+        transform.Translate(Vector3.left * astroidSpeed * Time.deltaTime);
+        transform.Rotate(5.0f,0f,0f, Space.Self);
+
+        if (transform.position.x < -9f)
         {
-            Destroy(gameObject);
+            Destroy(gameObject,3.0f);
         }
+
+
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -28,7 +34,16 @@ public class BulletMovement : MonoBehaviour
         if (collision.gameObject.tag == "astroid")
         {
             Destroy(collision.gameObject);
+
         }
     }
+
+
+    //private void OnBecameInvisible()
+    //{
+    //    Destroy(gameObject);
+    //}
+
+
 
 }
