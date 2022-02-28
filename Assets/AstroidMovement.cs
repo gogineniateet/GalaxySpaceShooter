@@ -7,13 +7,6 @@ public class AstroidMovement : MonoBehaviour
 
     public float astroidSpeed;
     
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -24,20 +17,10 @@ public class AstroidMovement : MonoBehaviour
         {
             Destroy(gameObject,3.0f);
         }
-
-
-
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "astroid")
-        {
-            Destroy(collision.gameObject);
-
-        }
-    }
-
+   
+    
 
     //private void OnBecameInvisible()
     //{
