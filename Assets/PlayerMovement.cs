@@ -21,8 +21,8 @@ public class PlayerMovement : MonoBehaviour
         float inputX = Input.GetAxis("Horizontal");
         float inputY = Input.GetAxis("Vertical");
 
-            transform.Translate(Vector3.up * speed * inputY * Time.deltaTime);
-            transform.Translate(Vector3.right * speed * inputX * Time.deltaTime);
+        transform.Translate(Vector3.up * speed * inputY * Time.deltaTime);
+        transform.Translate(Vector3.right * speed * inputX * Time.deltaTime);
 
         if (transform.position.y > 4.5f )
         {         

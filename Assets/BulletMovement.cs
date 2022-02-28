@@ -6,6 +6,7 @@ public class BulletMovement : MonoBehaviour
 {
     public float bulletSpeed;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,5 +17,9 @@ public class BulletMovement : MonoBehaviour
     void Update()
     {
         transform.Translate(bulletSpeed * Time.deltaTime, 0, 0);
+        if (transform.position.x > 8f)
+        {
+            Destroy(gameObject);
+        }
     }
 }

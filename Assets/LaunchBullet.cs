@@ -17,9 +17,7 @@ public class LaunchBullet : MonoBehaviour
         {
             Instantiate(bulletPrefab, transform.position + offset, Quaternion.identity);
             time = 0f;
-        }
-
-       
+        }       
 
     }
 }
