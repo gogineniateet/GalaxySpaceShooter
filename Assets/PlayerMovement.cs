@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == "astroid")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            Debug.Log("Game restarted .......");
+            Debug.Log("Game restarted.......");
         }
     }
 
