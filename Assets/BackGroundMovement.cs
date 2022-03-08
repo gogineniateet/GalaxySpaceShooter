@@ -12,6 +12,5 @@ public class BackGroundMovement : MonoBehaviour
     {
         transform.Translate(-movementSpeed * Time.deltaTime,0,0);
 
-
     }
 }

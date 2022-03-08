@@ -7,6 +7,15 @@ public class SpawnManager : MonoBehaviour
 
     public GameObject astroidPrefab;
     float time;
+    public GameObject backGround;
+    float x = 0;
+
+    public void Start()
+    {
+        InvokeRepeating("Spawning", 0f, 1f);
+    }
+
+
     // Update is called once per frame
     void Update()
     {
@@ -18,4 +27,19 @@ public class SpawnManager : MonoBehaviour
             time = 0.0f;
         }
     }
+
+    public void Spawning()
+    {
+        Instantiate(backGround, new Vector3(x, 0, 0), Quaternion.identity);
+        x = x + 18;
+
+    }
 }
+
+
+
+
+
+
+
+

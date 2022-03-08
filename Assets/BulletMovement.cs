@@ -9,7 +9,7 @@ public class BulletMovement : MonoBehaviour
     public AudioClip explosionSound;
     ScoreManager score;
     float time;
-    public GameObject explosionPrefab;
+    //public GameObject explosionPrefab;
 
     // Start is called before the first frame update
     void Start()
